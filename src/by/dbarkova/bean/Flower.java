@@ -51,7 +51,7 @@ public class Flower {
 	public void bloom(int newBudSize, String newBudColor){
 		bud.setSize(newBudSize);
 		bud.setColor(newBudColor);
-		bud.addFreshLeaves(25, "white", "ellipse");
+		bud.addFreshLeaves(11, "white", "ellipse");
 	}
 	
 	public void wither(int newBudSize, String newBudColor, int newStemH, int newStemW){
@@ -59,7 +59,7 @@ public class Flower {
 		bud.setColor(newBudColor);
 		stem.setHeight(newStemH);
 		stem.setWidth(newStemW);
-		bud.throwWitherLeaves(5);
+		bud.witherLeaves();
 		
 		
 	}
