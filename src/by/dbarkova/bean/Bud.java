@@ -47,15 +47,16 @@ public class Bud {
 		this.leaves = leaves;
 	}
 
-	void throwWitherLeaves(int freshLeafNumber){
-		
-		for(int i = 0; i < leaves.length; i++){
-			Leaf leaf = new Leaf("grey", "shriveled");
-			if (i >= freshLeafNumber){
-				leaves[i] = leaf;
+	void witherLeaves(){
+		if (leaves != null) {
+		for(int i = 0; i < leaves.length; i++) {
+		if(i%2 == 0) {
+			leaves[i].setColor("brown");;
+			}else {
+				leaves[i] = null; 
 			}
 			
 		}
 	}
-	
+  }
 }
